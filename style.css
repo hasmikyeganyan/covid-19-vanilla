@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: sans-serif;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  font-size: 14px;
+}
+tr:nth-child(even) {
+  background-color: #f3f3f3;
+}
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.container {
+  margin: auto;
+  margin-top: 40px;
+  width: 50%;
+  width: 60%;
+}
+.title p {
+  font-size: 27px;
+  padding-bottom: 10px;
+}
+.title #updated {
+  font-size: 14px;
+}
+.global {
+  background-color: #e6e8fa;
+  padding: 20px;
+  margin-top: 30px;
+}
+.card {
+  padding: 15px 20px;
+  background: white;
+  width: 48%;
+}
+.card .d-flex {
+  justify-content: start;
+  gap: 30px;
+  align-items: center;
+}
+.card .d-flex .icon {
+  font-size: 30px;
+}
+.text-danger {
+  color: #cd0808;
+}
+.text-success {
+  color: green;
+}
+.card .title {
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+.card .value {
+  font-weight: bold;
+  font-size: 22px;
+}
+.card .value span {
+  font-size: 12px;
+  font-weight: normal;
+}
+.region {
+  margin-top: 30px;
+  justify-content: start;
+  gap: 10px;
+}
+#regions-select{
+  width: 15%;
+}
+.table {
+  margin-top: 30px;
+}

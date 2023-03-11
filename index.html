@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <title>COVID 19 Statistics</title>
+</head>
+
+<body>
+    <!--Header-->
+    <section class="container">
+        <div class="d-flex">
+            <div class="title">
+                <p id="title">Coronavirus (Covid-19)</p>
+                <p id="updated"></p>
+            </div>
+            <!--Input Date-->
+            <div class="date">
+                <input type="date" name="date" id="date">
+            </div>
+        </div>
+    <!--Global information part-->
+        <div class="global">
+            <div class="d-flex">
+                <div class="card">
+                    <div class="d-flex">
+                        <i class="icon fa-solid fa-virus-covid text-danger"></i>
+                        <div>
+                            <p class="title">Coronavirus Cases</p>
+                            <p class="value" id="confirmed"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="d-flex">
+                        <i class="icon fa-solid fa-virus-covid text-success"></i>
+                        <div>
+                            <p class="title">Total Recovered</p>
+                            <p class="value" id="recovered"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="d-flex">
+                <div class="card">
+                    <div class="d-flex">
+                        <i class="icon fa-solid fa-virus-covid text-danger"></i>
+                        <div>
+                            <p class="title">Total Death</p>
+                            <p class="value" id="deaths"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="d-flex">
+                        <i class="icon fa-solid fa-virus-covid text-danger"></i>
+                        <div>
+                            <p class="title">Active Cases</p>
+                            <p class="value" id="active"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--Select Region-->
+        <div class="region d-flex">
+            <label for="region">Select a region:</label>
+            <select id="regions-select"></select>
+        </div>
+    <!--Regions info table-->
+        <div class="table">
+            <table id="table">
+                <tr>
+                    <th>ISO</th>
+                    <th>Region</th>
+                    <th>Province</th>
+                    <th>Total Cases</th>
+                    <th>New Cases</th>
+                    <th>Total Deaths</th>
+                    <th>New Deaths</th>
+                    <th>Total Recovered</th>
+                    <th>Active Cases</th>
+                </tr>
+                <tbody id="rows-body"></tbody>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
